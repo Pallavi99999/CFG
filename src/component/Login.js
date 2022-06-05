@@ -43,8 +43,10 @@ function Login() {
     }
     
     return (
-        <div>
+        <div >
             <Form method="POST" onSubmit={handleSubmit}>
+            <h3 style={{color:"SlateBlue"}}>Login</h3>
+            <br></br>
                 <Form.Group size="lg" controlId="email">
                     <Form.Label>Email</Form.Label>
                     <Form.Control

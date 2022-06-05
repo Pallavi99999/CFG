@@ -47,8 +47,10 @@ export default function Signup() {
     const[userRole,setUserRole] = useState('')
     
     return (
-        <div>
-            <Form method="POST" onSubmit={handleSubmit}>
+        <div style={{backgroundImage: "url('../asset/subtle-prism.svg')",paddingTop:"50px"}}>
+            <Form method="POST" onSubmit={handleSubmit} style={{backgroundColor:"white"}}>
+                <h3 style={{color:"SlateBlue"}}>Sign up!</h3>
+                <br></br>
                 <Form.Group size="lg" controlId="email">
                     <Form.Label>Name</Form.Label>
                     <Form.Control
@@ -70,25 +72,25 @@ export default function Signup() {
                 </Form.Group>
                 <br></br>
                 <Form.Group size="lg" controlId="password">
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label >Password</Form.Label>
                     <Form.Control
                         type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </Form.Group>
+                <br></br>
                 <Form.Group check>
-                    <Form.Label check>
-                        <Input type='radio' name='userRole' value={1} onChange={(e) => setUserRole(e.target.value)} /> Program
-                        Associate
+                    <Form.Label check style={{fontSize: "20px"}}>
+                        <Input type='radio' name='userRole' value={1} onChange={(e) => setUserRole(e.target.value)}/> Program Associate
                     </Form.Label>
-                    </Form.Group>
-                    <Form.Group check>
-                    <Form.Label check>
+                </Form.Group>
+                <Form.Group check>
+                    <Form.Label check style={{fontSize: "20px"}}>
                         <Input type='radio' name='userRole' value={2} onChange={(e) => setUserRole(e.target.value)}/> Program
                         Manager
                     </Form.Label>
-                  </Form.Group>
+                </Form.Group>
                 <br></br>
                 <Button class="btn btn-success btn-lg" size="lg" type="submit" disabled={!validateForm()} onClick={register}>
                 Sign Up
