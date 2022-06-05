@@ -5,6 +5,7 @@ import axios from "axios"
 import jwt from "jwt-decode"
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
+import img from '../assets/subtle-prism.png'
 
 function Login() {
 
