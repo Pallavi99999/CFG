@@ -1,0 +1,12 @@
+
+
+@media all and (min-width: 50px) {
+    Form {
+      border: 1px solid rgb(108, 149, 200);
+      border-radius: 10px;
+      padding: 60px 20px;
+      margin: 60px auto;
+      max-width: 620px;
+    }
+  }
+
