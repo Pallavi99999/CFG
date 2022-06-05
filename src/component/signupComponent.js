@@ -47,9 +47,9 @@ export default function Signup() {
     const[userRole,setUserRole] = useState('')
     
     return (
-        <div style={{backgroundImage: "url('../asset/subtle-prism.svg')",paddingTop:"50px"}}>
+        <div className="back">
             <Form method="POST" onSubmit={handleSubmit} style={{backgroundColor:"white"}}>
-                <h3 style={{color:"SlateBlue"}}>Sign up!</h3>
+                <h3 style={{color:"SlateBlue",textAlign:"center"}}>Sign up!</h3>
                 <br></br>
                 <Form.Group size="lg" controlId="email">
                     <Form.Label>Name</Form.Label>

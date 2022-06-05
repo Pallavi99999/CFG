@@ -1,12 +1,17 @@
 
-
 @media all and (min-width: 50px) {
     Form {
-      border: 2px solid rgb(108, 149, 200);
+      border: 2px solid rgb(94, 149, 217);
       border-radius: 10px;
       padding: 60px 20px;
       margin: 0px auto;
       max-width: 620px;
     }
   }
+
+.back {
+  background-image: url(../asset/subtle-prism.svg);
+  padding-top: 40px;
+  padding-bottom: 250px;
+}
 

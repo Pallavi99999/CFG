@@ -43,9 +43,9 @@ function Login() {
     }
     
     return (
-        <div >
-            <Form method="POST" onSubmit={handleSubmit}>
-            <h3 style={{color:"SlateBlue"}}>Login</h3>
+        <div className="back" style={{paddingTop: "100px"}}>
+            <Form method="POST" onSubmit={handleSubmit} style={{backgroundColor:"white"}}>
+            <h3 style={{color:"SlateBlue", textAlign:"center"}}>Login</h3>
             <br></br>
                 <Form.Group size="lg" controlId="email">
                     <Form.Label>Email</Form.Label>
