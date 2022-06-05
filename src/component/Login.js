@@ -2,6 +2,7 @@ import React, { useState  } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import axios from "axios"
+import jwt from "jwt-decode"
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
@@ -28,9 +29,11 @@ function Login() {
 
             if(res)
             {
-            alert('Success')
-            console.log(res);
-            navigate("/Dashboard");
+                const token = res.data.token
+                const user = jwt(token)
+                localStorage.setItem('token',token)
+                localStorage.setItem('user',JSON.stringify(user))
+                navigate('/dashboard')
             }
             else
             {
